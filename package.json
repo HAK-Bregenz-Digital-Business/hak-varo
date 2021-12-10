@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "dev": "concurrently \"nx serve stagefright\" \"nx serve api\"",
+    "dev": "concurrently \"nx serve hak-varo\" \"nx serve api\"",
     "build": "nx build",
     "test": "nx test"
   },
