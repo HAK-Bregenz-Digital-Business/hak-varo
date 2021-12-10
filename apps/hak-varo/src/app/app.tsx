@@ -1,27 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { Message } from '@hak-varo/api-interfaces';
+import { Registration } from '@hak-varo/registration';
 
 export const App = () => {
-  const [m, setMessage] = useState<Message>({ message: '' });
-
-  useEffect(() => {
-    fetch('/api')
-      .then((r) => r.json())
-      .then(setMessage);
-  }, []);
-
   return (
-    <>
-      <div style={{ textAlign: 'center' }}>
-        <h1>Welcome to hak-varo!</h1>
-        <img
-          width="450"
-          src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-          alt="Nx - Smart, Extensible Build Framework"
-        />
-      </div>
-      <div>{m.message}</div>
-    </>
+    <Registration
+      endDate={new Date(2021, 11, 17)}
+      registrationURL="https://forms.gle/y2EwntW7L2V67aDe6"
+    />
   );
 };
 
