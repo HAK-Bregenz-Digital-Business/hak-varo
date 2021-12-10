@@ -1,0 +1,28 @@
+{
+  "root": "apps/hak-varo-e2e",
+  "sourceRoot": "apps/hak-varo-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/hak-varo-e2e/cypress.json",
+        "devServerTarget": "hak-varo:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "hak-varo:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/hak-varo-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["hak-varo"]
+}
