@@ -12,7 +12,7 @@ export const Registration: React.FC<RegistrationProps> = ({
 }: RegistrationProps) => {
   const calculateTimeLeft: () => any = () => {
     const difference: number = +endDate - +new Date();
-    let timeLeft: any = {};
+    let timeLeft: object = {};
 
     if (difference > 0) {
       timeLeft = {
@@ -34,7 +34,7 @@ export const Registration: React.FC<RegistrationProps> = ({
     }, 1000);
   });
 
-  const timerComponents: any = [];
+  const timerComponents: JSX.Element[] = [];
 
   Object.keys(timeLeft).forEach((interval) => {
     /*eslint-disable-next-line */
