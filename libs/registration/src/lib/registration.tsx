@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './registration.scss';
 
-/* eslint-disable-next-line */
 export interface RegistrationProps {
   endDate: Date;
   registrationURL: string;
