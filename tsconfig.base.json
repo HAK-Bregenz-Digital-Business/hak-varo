@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@hak-varo/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@hak-varo/registration": ["libs/registration/src/index.ts"]
+      "@hak-varo/registration": ["libs/registration/src/index.ts"],
+      "@hak-varo/shared/components": ["libs/shared/components/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
