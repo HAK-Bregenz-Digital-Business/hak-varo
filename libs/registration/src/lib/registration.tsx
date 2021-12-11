@@ -27,7 +27,6 @@ export const Registration: React.FC<RegistrationProps> = ({
   };
 
   const [timeLeft, setTimeLeft] = useState<any>(calculateTimeLeft());
-  const [year, setYear] = useState<number>(new Date().getFullYear());
 
   useEffect(() => {
     setTimeout(() => {
@@ -38,6 +37,7 @@ export const Registration: React.FC<RegistrationProps> = ({
   const timerComponents: any = [];
 
   Object.keys(timeLeft).forEach((interval) => {
+    /*eslint-disable-next-line */
     //@ts-ignore
     if (!timeLeft[interval]) {
       return;
@@ -46,6 +46,7 @@ export const Registration: React.FC<RegistrationProps> = ({
     timerComponents.push(
       <span>
         {
+          /*eslint-disable-next-line */
           //@ts-ignore
           timeLeft[interval]
         }{' '}
