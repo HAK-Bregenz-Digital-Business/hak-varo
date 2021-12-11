@@ -10,7 +10,7 @@ export const Registration: React.FC<RegistrationProps> = ({
   endDate,
   registrationURL,
 }: RegistrationProps) => {
-  const calculateTimeLeft: () => any = () => {
+  const calculateTimeLeft: () => object = () => {
     const difference: number = +endDate - +new Date();
     let timeLeft: object = {};
 
@@ -26,7 +26,7 @@ export const Registration: React.FC<RegistrationProps> = ({
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState<any>(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<object>(calculateTimeLeft());
 
   useEffect(() => {
     setTimeout(() => {
