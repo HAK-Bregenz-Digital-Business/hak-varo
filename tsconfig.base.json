@@ -17,7 +17,8 @@
     "paths": {
       "@hak-varo/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@hak-varo/registration": ["libs/registration/src/index.ts"],
-      "@hak-varo/shared/components": ["libs/shared/components/src/index.ts"]
+      "@hak-varo/shared/components": ["libs/shared/components/src/index.ts"],
+      "@hak-varo/shared/utils/models": ["libs/shared/utils/src/models/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
