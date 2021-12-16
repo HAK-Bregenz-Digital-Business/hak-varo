@@ -63,8 +63,13 @@ export const Registration: React.FC<RegistrationProps> = ({
       <div className="registration__countdown">
         {timerComponents.length > 0 ? (
           <>
-            {timerComponents} übrig <br />
-            <a href={`${registrationURL}`} className="registration__link">
+            <div className="registration__countdown__timer">
+              {timerComponents} übrig
+            </div>
+            <a
+              href={`${registrationURL}`}
+              className="registration__countdown__link"
+            >
               Jetzt anmelden!
             </a>
           </>

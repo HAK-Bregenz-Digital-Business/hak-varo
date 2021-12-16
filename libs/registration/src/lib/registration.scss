@@ -10,12 +10,20 @@
     text-align: center;
   }
 
-  &__link {
-    margin-top: 32px;
-    padding: 16px;
-    background-color: #003f70;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
+  &__countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__link {
+      margin-top: 32px;
+      padding: 16px;
+      background-color: #003f70;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 150px;
+    }
   }
 }
