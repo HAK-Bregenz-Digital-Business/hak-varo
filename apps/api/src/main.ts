@@ -1,5 +1,6 @@
 import * as express from 'express';
 import { Message } from '@hak-varo/api-interfaces';
+import { example } from '@hak-varo/shared/utils/models';
 
 const app = express();
 
